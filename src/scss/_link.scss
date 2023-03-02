@@ -1,0 +1,19 @@
+.link {
+  position: relative;
+  color: $text-color;
+  text-decoration: none;
+  padding-bottom: 0.1rem;
+  border-bottom: .2rem solid $text-color;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -3rem;
+    background: url('../img/icon-user.svg') center / cover no-repeat;
+    height: 2.6rem;
+    width: 2.6rem;
+  }
+
+}
