@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+@mixin respond() {
+  @media only screen and (max-width: 375px) {
+    @content;
+  }
+}
+
 html {
   font-size: 62.5%;
 }
@@ -21,6 +27,10 @@ body {
 }
 
 .container {
-  width: 114rem;
+  max-width: 114rem;
   overflow: hidden;
+
+  @include respond() {
+    padding: 1.5rem;
+  }
 }

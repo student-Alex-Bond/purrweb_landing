@@ -3,4 +3,8 @@
   font-size: 6.4rem;
   font-weight: 700;
   line-height: 7rem;
+
+  @include respond() {
+    font-size: 3.5rem;
+  }
 }
