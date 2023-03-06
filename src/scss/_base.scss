@@ -14,6 +14,10 @@
 
 html {
   font-size: 62.5%;
+
+  @include respond() {
+    font-size: 50.5%;
+  }
 }
 
 body {
@@ -27,7 +31,7 @@ body {
 }
 
 .container {
-  max-width: 114rem;
+  max-width: 144rem;
   overflow: hidden;
 
   @include respond() {

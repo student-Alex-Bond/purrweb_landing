@@ -16,4 +16,8 @@
     width: 2.6rem;
   }
 
+  @include respond() {
+    justify-self: end;
+  }
+
 }

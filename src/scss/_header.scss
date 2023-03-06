@@ -1,5 +1,24 @@
 .header {
   display: grid;
-  grid-template-columns: min-content min-content min-content;
+  grid-template-columns: min-content min-content;
   align-items: center;
+  padding: 2.3rem 0 0 8.5rem;
+
+  &__logo {
+    width: 20.9rem;
+    height: 10.9rem;
+    margin-right: 14.8rem;
+
+    @include respond() {
+      width: 10.2rem;
+      height: 5.29rem;
+      margin: 0;
+    }
+  }
+
+  @include respond() {
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+  }
 }
