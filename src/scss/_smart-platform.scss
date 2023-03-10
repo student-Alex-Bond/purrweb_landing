@@ -1,11 +1,12 @@
 .smart-platform {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 14.3rem 0 0 10rem;
+    grid-template-columns: 50vw 1fr;
+    grid-template-rows: min-content min-content;
+
 
     &__download {
         display: grid;
-        grid-template-columns: 40vw min-content min-content;
+        grid-template-columns: 50vw min-content min-content;
         grid-column: 1 / -1;
 
         @include respond() {
@@ -14,6 +15,26 @@
     }
 
     &__img {
-        background: #0000;
+        position: relative;
+
+        transform: translate(-2rem, -13.5rem);
+
+        &_phone {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+        }
+    }
+
+    &__descr {
+        padding: 14.3rem 0 0 10rem;
+    }
+
+    &__text {
+        font-family: "Monsterrat-Bold", "Arial", sans-serif;
+        font-size: 3.5rem;
+        line-height: 7rem;
+        font-weight: 700;
     }
 }
