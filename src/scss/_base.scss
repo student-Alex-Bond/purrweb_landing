@@ -1,40 +1,35 @@
 *,
 ::after,
 ::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @mixin respond() {
-  @media only screen and (max-width: 375px) {
-    @content;
-  }
+    @media only screen and (max-width: 375px) {
+        @content;
+    }
 }
 
 html {
-  font-size: 62.5%;
-
-  @include respond() {
-    font-size: 50.5%;
-  }
+    font-size: 62.5%;
 }
 
 body {
-  font-family: "Monsterrat", "Arial", sans-serif;
-  font-weight: 400;
-  color: $text-color;
-  font-size: 1.6rem;
-  background-color: $background-color-main;
-  display: grid;
-  justify-content: center;
+    font-family: "Monsterrat", "Arial", sans-serif;
+    font-weight: 400;
+    color: $text-color;
+    font-size: 1.6rem;
+    background-color: $background-color-main;
+    display: grid;
+    justify-content: center;
 }
 
 .container {
-  max-width: 144rem;
-  overflow: hidden;
-
-  @include respond() {
-    padding: 1.5rem;
-  }
+    max-width: 144rem;
+    overflow: hidden;
+    @include respond() {
+        padding: 4rem 1.5rem 0 1.5rem;
+    }
 }

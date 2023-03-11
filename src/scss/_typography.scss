@@ -1,13 +1,17 @@
 .title-1 {
-  font-family: "Monsterrat-Bold", "Arial", sans-serif;
-  font-size: 6.4rem;
-  font-weight: 700;
-  line-height: 7rem;
+    font-family: "Monsterrat-Bold", "Arial", sans-serif;
+    font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 7rem;
+    @include respond() {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
 }
 
 .title-2 {
-  font-family: "Monsterrat-Bold", "Arial", sans-serif;
-  font-size: 5.1rem;
-  font-weight: 700;
-  line-height: 6.2rem;
+    font-family: "Monsterrat-Bold", "Arial", sans-serif;
+    font-size: 5.1rem;
+    font-weight: 700;
+    line-height: 6.2rem;
 }

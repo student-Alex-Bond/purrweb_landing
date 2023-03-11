@@ -1,28 +1,46 @@
 .cooperation {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(37.5rem, 1fr));
-  grid-column-gap: 8rem;
-  padding: 6.1rem 0 12.3rem 0;
-
-  &__item {
-    justify-self: end;
-    width: 50.3rem;
-    height: 31.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 5.5rem;
-    border: .1rem solid rgba(255, 255, 255, 0.5);
-    border-radius: 1rem;
-  }
-
-  &__item:last-child {
-    justify-self: start;
-  }
-
-  &__text {
-    font-family: "Noto Sans Bold", "Arial", sans-serif;
-    font-size: 3rem;
-    line-height: 4.1rem;
-  }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(34.5rem, 1fr));
+    grid-column-gap: 8rem;
+    padding: 6.1rem 0 12.3rem 0;
+    @include respond() {
+        padding: 0;
+        padding-top: 7rem;
+        grid-column-gap: 0;
+        grid-row-gap: 3rem;
+    }
+    &__item {
+        justify-self: end;
+        width: 50.3rem;
+        height: 31.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5.5rem;
+        border: .2rem solid rgba(255, 255, 255, 0.5);
+        border-radius: 1.5rem;
+        @include respond() {
+            width: 100%;
+            height: auto;
+            padding: 3.5rem 0 3.9rem 3.3rem;
+        }
+    }
+    &__item:last-child {
+        justify-self: start;
+    }
+    &__link {
+        color: $text-color;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        font-family: "Noto Sans 400", "Arial", sans-serif;
+    }
+    &__text {
+        font-family: "Noto Sans Bold", "Arial", sans-serif;
+        font-size: 3rem;
+        line-height: 4.1rem;
+        @include respond() {
+            font-size: 2.4rem;
+            line-height: 3.3rem;
+        }
+    }
 }
