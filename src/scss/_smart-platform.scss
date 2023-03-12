@@ -1,7 +1,9 @@
 .smart-platform {
     display: grid;
-    grid-template-columns: 50vw 1fr;
+    grid-template-columns: 60vw 1fr;
     grid-template-rows: min-content min-content;
+    z-index: 0;
+    position: relative;
     @include respond() {
         grid-template-columns: 65vw 1fr;
     }
@@ -29,6 +31,33 @@
         @include respond() {
             transform: translate(-6rem, -1rem);
         }
+    }
+    &__circle {
+        position: absolute;
+        top: 45.3rem;
+        left: 3.2rem;
+        width: 12.5rem;
+        height: 12.5rem;
+    }
+    &__blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 12.5rem;
+        height: 12.5rem;
+        border-radius: 50%;
+        background-color: rgba(96, 92, 234, 0.5);
+        filter: blur(5rem);
+    }
+    &__divider {
+        position: absolute;
+        top: 12rem;
+        left: -2rem;
+        display: block;
+        width: 14rem;
+        height: 0.4rem;
+        background-color: $text-color;
+        transform: rotate(120deg);
     }
     &__descr {
         padding: 14.3rem 0 0 10rem;

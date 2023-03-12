@@ -1,6 +1,9 @@
 .link {
     position: relative;
     color: $text-color;
+    font-size: 1.8rem;
+    font-family: "Noto Sans 400", "Arial", sans-serif;
+    line-height: 2.1rem;
     text-decoration: none;
     padding-bottom: 0.1rem;
     border-bottom: .2rem solid $text-color;
@@ -12,8 +15,8 @@
         content: '';
         display: block;
         position: absolute;
-        top: 0;
-        left: -3rem;
+        top: 0.4rem;
+        left: -3.9rem;
         background: url('../img/icon-user.svg') center / cover no-repeat;
         height: 2.6rem;
         width: 2.6rem;
