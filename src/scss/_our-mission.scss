@@ -1,0 +1,9 @@
+.our-mission {
+    display: grid;
+    grid-template-columns: 60vw 30vw;
+    align-items: center;
+    padding: 28.3rem 0;
+    &__img {
+        transform: rotate(90deg);
+    }
+}

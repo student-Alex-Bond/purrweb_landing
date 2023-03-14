@@ -28,11 +28,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 16.3rem;
         height: 5.2rem;
         border: .2rem solid $text-color;
         border-radius: 0.8rem;
         padding: .6rem;
+        margin-right: 3rem;
         @include respond() {
             width: 18.5rem;
             height: 6rem;
@@ -46,8 +46,6 @@
         }
     }
     &-btn+img {
-        width: 100%;
-        object-fit: cover;
         @include respond() {
             &:first-child {
                 width: 81%;
