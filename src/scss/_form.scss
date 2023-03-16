@@ -1,5 +1,4 @@
 .form {
-    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2.4rem;
@@ -11,6 +10,7 @@
         display: none;
     }
     &__input {
+        border: .2rem solid white;
         grid-column: 1 / -1;
         padding: 2.9rem 0 2.9rem 2.3rem;
         font-family: 'Noto Sans 400';
@@ -18,6 +18,16 @@
         line-height: 2.5rem;
         color: $text-placeholder;
         border-radius: 1rem;
+        &:focus {
+            outline: none;
+            border: .2rem solid white;
+        }
+        &:focus:valid {
+            border: .2rem solid white;
+        }
+        &:focus:invalid:required {
+            border: .2rem solid $color-error;
+        }
         &-state {
             grid-column: 2/3;
             @include respond() {
@@ -41,6 +51,16 @@
         height: 19.9rem;
         margin-bottom: calc(6rem - 2.4rem);
         border-radius: 1rem;
+        &:focus {
+            outline: none;
+            border: .2rem solid white;
+        }
+        &:focus:valid {
+            border: .2rem solid white;
+        }
+        &:focus:invalid:required {
+            border: .2rem solid $color-error;
+        }
     }
     &__btn {
         background-color: transparent;
@@ -51,6 +71,7 @@
         width: 39.8rem;
         border-radius: 1rem;
         padding: 2.5rem 0;
+        cursor: pointer;
         font-family: "Monsterrat-Bold";
         font-weight: 700;
         font-size: 2.4rem;

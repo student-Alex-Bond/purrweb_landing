@@ -1,5 +1,6 @@
 .feedback {
     padding: 0 31.1rem;
+    text-align: center;
     @include respond() {
         padding: 0;
     }

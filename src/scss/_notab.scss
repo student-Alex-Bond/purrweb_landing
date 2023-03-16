@@ -1,0 +1,13 @@
+.notab {
+    display: flex;
+    padding: 34.9rem 0 24.5rem 0;
+    justify-content: center;
+    background: linear-gradient(360deg, #000000 6.8%, rgba(0, 0, 0, 0) 51.62%, #000000 97.38%), url('../img/background-notab.png');
+    @include respond() {
+        display: none;
+    }
+    &__img {
+        width: 59.5vw;
+        object-fit: cover;
+    }
+}
