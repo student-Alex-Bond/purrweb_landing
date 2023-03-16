@@ -1,0 +1,6 @@
+.feedback {
+    padding: 0 31.1rem;
+    @include respond() {
+        padding: 0;
+    }
+}

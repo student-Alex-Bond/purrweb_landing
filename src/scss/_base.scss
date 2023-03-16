@@ -29,7 +29,6 @@ body {
 .container {
     max-width: 144rem;
     overflow: hidden;
-    z-index: 0;
     @include respond() {
         padding: 4rem 1.5rem 0 1.5rem;
     }
