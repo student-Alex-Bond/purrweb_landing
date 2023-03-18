@@ -1,22 +1,7 @@
-.qr-code-generate {
-    position: relative;
-    padding: 30rem 0;
-    display: flex;
-    justify-content: center;
-    background: url('../img/background-qr-code.png') center no-repeat;
-    &__img {
-        object-fit: cover;
-    }
-    &__background {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100rem;
-        height: 95rem;
-        background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
-        opacity: 0.15;
-        filter: blur(15.5rem);
-        border-radius: 47.6rem;
-        transform: translate(-50%, -50%) rotate(-0.55deg);
-    }
+.qr-code {
+    background: url('../img/background-coctail.jpg'), url('../img/background-dj.jpg');
+    background-size: 50% 50%;
+    background-repeat: no-repeat no-repeat;
+    background-position: top right, 0px 0px;
+    background-origin: content-box, content-box;
 }
