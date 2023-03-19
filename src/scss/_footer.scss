@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 15.5rem 10rem 8.6rem 10rem;
+    font-family: "Avenir bold", "Arial", sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    &__right-part,
+    &__left-part {
+        display: flex;
+        flex-direction: column;
+    }
+    &__contacts {
+        font-family: "Avenir 500", "Arial", sans-serif;
+    }
+    &__img {
+        margin-bottom: 1.6rem;
+        width: 8.1rem;
+        height: 1.6rem;
+    }
+    &__link {
+        font-family: "Avenir bold", "Arial", sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        text-decoration: none;
+        color: $text-color;
+        &:first-child {
+            margin-bottom: 2.5rem;
+        }
+    }
+}
