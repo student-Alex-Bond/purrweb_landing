@@ -1,11 +1,26 @@
 .qr-code-generate {
     position: relative;
     padding: 30rem 0;
+    z-index: 0;
     display: flex;
     justify-content: center;
     background: url('../img/background-qr-code.png') center no-repeat;
     &__img {
         object-fit: cover;
+    }
+    &__arrow {
+        font-family: "Monsterrat-Bold", "Arial", sans-serif;
+        font-size: 2.1rem;
+        line-height: 2.6rem;
+        &::after {
+            content: "";
+            margin: 0;
+            background: url('../img/Arrow.svg') no-repeat;
+            display: block;
+            width: 20rem;
+            height: 8rem;
+            transform: translate(-8rem, -10rem);
+        }
     }
     &__background {
         position: absolute;

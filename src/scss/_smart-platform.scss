@@ -7,16 +7,6 @@
     @include respond() {
         grid-template-columns: 65vw 1fr;
     }
-    &__download {
-        display: grid;
-        grid-template-columns: 50vw min-content min-content;
-        grid-column: 1 / -1;
-        padding-left: 10rem;
-        @include respond() {
-            grid-template-columns: auto;
-            justify-content: center;
-        }
-    }
     &__img {
         position: relative;
         transform: translate(-2rem, -13.5rem);
@@ -76,17 +66,6 @@
         @include respond() {
             padding: 9.8rem 0 0 0;
             margin-bottom: 11.3rem;
-        }
-    }
-    &__text {
-        font-family: "Monsterrat-Bold", "Arial", sans-serif;
-        font-size: 3.5rem;
-        line-height: 7rem;
-        font-weight: 700;
-        @include respond() {
-            font-size: 2.4rem;
-            line-height: 3rem;
-            margin-bottom: 3.4rem;
         }
     }
 }
