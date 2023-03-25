@@ -8,6 +8,7 @@
         padding-top: 7rem;
         grid-column-gap: 0;
         grid-row-gap: 3rem;
+        @include padding-1_5rem;
     }
     &__item {
         justify-self: end;

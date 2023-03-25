@@ -2,8 +2,27 @@
     display: grid;
     grid-template-columns: 60vw 30vw;
     align-items: center;
-    padding: 28.3rem 0;
+    justify-content: center;
+    //padding: 18.3rem 0;
+    //height: 104.8rem;
+    @include respond() {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2, min-content);
+        padding-top: 11rem;
+        @include padding-1_5rem;
+    }
+    &__text {
+        padding-right: 5rem;
+        @include respond() {
+            order: 1;
+        }
+    }
     &__img {
         transform: rotate(90deg);
+        @include respond() {
+            order: 2;
+            transform: rotate(0deg);
+            width: 34.3rem;
+        }
     }
 }

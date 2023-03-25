@@ -6,6 +6,7 @@
     z-index: 0;
     @include respond() {
         grid-template-columns: 65vw 1fr;
+        @include padding-1_5rem;
     }
     &__img {
         position: relative;
@@ -40,6 +41,9 @@
         left: 3.2rem;
         width: 12.5rem;
         height: 12.5rem;
+        @include respond() {
+            display: none;
+        }
     }
     &__blur {
         position: absolute;

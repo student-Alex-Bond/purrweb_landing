@@ -1,33 +1,50 @@
 .cookie {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  width: 144rem;
-  transform: translateX(-50%);
-  display: none;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3.6rem 2.8rem 3.4rem 10rem;
-  background-color: $background-color-cookie;
-
-  &__text {
-    font-family: "Noto Sans 400", "Arial", sans-serif;
-    font-size: 1.4rem;
-    font-weight: 400;
-    line-height: 1.9rem;
-    color: $text-color;
-  }
-
-  &__btn {
-    width: 13.2rem;
-    height: 5rem;
-    border-color: $text-color;
-    border-radius: 0.6rem;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: $text-color;
-
-    &:hover {
-      cursor: pointer;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 9999;
+    padding: 3.6rem 2.8rem 3.4rem 10rem;
+    background-color: $background-color-cookie;
+    &>.container {
+        margin: 0 auto;
     }
-  }
+    @include respond() {
+        &>.container {
+            padding: 2.2rem 1.5rem;
+        }
+        padding: 0;
+    }
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include respond() {
+            gap: 4rem;
+        }
+    }
+    &__text {
+        font-family: "Noto Sans 400", "Arial", sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.9rem;
+        color: $text-color;
+    }
+    &__btn {
+        width: 13.2rem;
+        height: 5rem;
+        border-color: $text-color;
+        border-radius: 0.6rem;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: $text-color;
+        &:hover {
+            cursor: pointer;
+        }
+        @include respond() {
+            min-width: 9.2rem;
+        }
+    }
 }

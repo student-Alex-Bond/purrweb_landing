@@ -30,6 +30,22 @@ body {
     max-width: 144rem;
     overflow: hidden;
     @include respond() {
-        padding: 4rem 1.5rem 0 1.5rem;
+        padding: 4rem 0;
     }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+}
+
+@mixin padding-1_5rem {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
