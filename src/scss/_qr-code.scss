@@ -8,9 +8,53 @@
     background-repeat: no-repeat no-repeat;
     background-position: top right, 0px 0px;
     background-origin: content-box, content-box;
+    @include respond() {
+        &>.download .download__text {
+            display: none;
+        }
+        &>.download {
+            margin-bottom: 24rem;
+        }
+        @include padding-1_5rem;
+        padding-top: 25rem;
+        grid-template-columns: 1fr;
+        background: linear-gradient(179.83deg,
+        #000000 -3.1%,
+        rgba(0,
+        0,
+        0,
+        0) 56.76%,
+        #000000 83.92%),
+        url('../img/background-coctail.jpg'),
+        url('../img/background-dj.jpg');
+        background-repeat: no-repeat no-repeat;
+        background-position: top,
+        5rem 60rem;
+        background-size: 41.6rem 33.5rem,
+        35.3rem 29.7rem;
+    }
+    &__text {
+        @include respond() {
+            margin-bottom: 5rem;
+        }
+    }
+    &__img {
+        @include respond() {
+            justify-self: center;
+            width: 28.1rem;
+            height: 56.4rem;
+            margin-bottom: 5rem;
+        }
+    }
     &__nightlife {
         position: absolute;
         top: 0;
         right: 0;
+        @include respond() {
+            width: 8.9rem;
+            height: 4.5rem;
+            top: 73.7rem;
+            left: 3.7rem;
+        }
     }
 }

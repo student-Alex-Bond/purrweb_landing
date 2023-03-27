@@ -4,7 +4,9 @@
     grid-gap: 2.4rem;
     justify-content: center;
     @include respond() {
+        margin-top: 4.9rem;
         grid-template-columns: 1fr;
+        @include padding-1_5rem;
     }
     &__label {
         display: none;
@@ -18,6 +20,9 @@
         line-height: 2.5rem;
         color: $text-placeholder;
         border-radius: 1rem;
+        @include respond() {
+            padding: 1.8rem 0 1.7rem 1.1rem;
+        }
         &:focus {
             outline: none;
             border: .2rem solid white;

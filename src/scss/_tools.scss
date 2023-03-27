@@ -1,4 +1,64 @@
 .tools {
     display: grid;
     grid-template-columns: 40vw 60vw;
+    @include respond() {
+        @include padding-1_5rem;
+        grid-template-columns: 1fr;
+    }
+    &__text {
+        @include respond() {
+            margin-bottom: 3rem;
+        }
+    }
+    &__imgs {
+        position: relative;
+        @include respond() {
+            margin-bottom: 30rem;
+            &-1 {
+                position: absolute;
+                top: 18.7rem;
+                left: 14.8rem;
+                width: 29.6rem;
+                height: 6rem;
+            }
+            &-2 {
+                display: none;
+            }
+            &-3 {
+                position: absolute;
+                top: 12.9rem;
+                left: -4.5rem;
+                width: 14.5rem;
+                height: 8.6rem;
+            }
+            &-4 {
+                position: absolute;
+                top: 9.5rem;
+                left: 11.8rem;
+                width: 9.1rem;
+                height: 5.5rem;
+            }
+            &-5 {
+                position: absolute;
+                top: 0rem;
+                left: 26.3rem;
+                width: 8.6rem;
+                height: 9rem;
+            }
+            &-6 {
+                position: absolute;
+                top: 5rem;
+                left: 2rem;
+                width: 11rem;
+                height: 2.2rem;
+            }
+            &-7 {
+                position: absolute;
+                top: 3.5rem;
+                left: 17.6rem;
+                width: 9.1rem;
+                height: 5.5rem;
+            }
+        }
+    }
 }

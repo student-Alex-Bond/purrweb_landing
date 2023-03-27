@@ -3,5 +3,9 @@
     text-align: center;
     @include respond() {
         padding: 0;
+        &>.paragraph {
+            padding: 0 2.6rem;
+            text-align: center;
+        }
     }
 }
