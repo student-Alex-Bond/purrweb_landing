@@ -32,7 +32,12 @@
         }
     }
     &__contacts {
+        display: flex;
+        flex-direction: column;
         font-family: "Avenir 500", "Arial", sans-serif;
+        @include respond() {
+            flex-direction: row;
+        }
     }
     &__img {
         margin-bottom: 1.6rem;

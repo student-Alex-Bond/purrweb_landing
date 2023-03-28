@@ -8,6 +8,9 @@
     background: url('../img/background-qr-code.png') center no-repeat;
     @include respond() {
         @include padding-1_5rem;
+        background: url('../img/background-qr-code.png') center no-repeat;
+        background-size: 48rem 12.3rem;
+        background-position: center 65%;
     }
     &__img {
         position: relative;
@@ -74,5 +77,12 @@
         filter: blur(15.5rem);
         border-radius: 47.6rem;
         transform: translate(-50%, -50%) rotate(-0.55deg);
+        @include respond() {
+            top: 65%;
+            left: 50%;
+            width: 30.9rem;
+            height: 28.8rem;
+            opacity: .35;
+        }
     }
 }

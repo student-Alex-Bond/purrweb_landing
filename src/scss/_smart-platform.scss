@@ -20,6 +20,14 @@
             z-index: 1;
             background: url('../img/backgroung-figure.png') center/100% no-repeat;
             filter: blur(5rem);
+            @include respond() {
+                top: 0.8rem;
+                left: -13.2rem;
+                width: 36.4rem;
+                height: 43rem;
+                background: url('../img/backgroung-figure.png') center/300% no-repeat;
+                filter: blur(3.5rem);
+            }
         }
         &_phone {
             position: absolute;
@@ -42,15 +50,18 @@
         width: 12.5rem;
         height: 12.5rem;
         @include respond() {
-            display: none;
+            width: 7.4rem;
+            height: 7.4rem;
+            top: 23.3rem;
+            left: 0rem;
         }
     }
     &__blur {
         position: absolute;
         top: 0;
         left: 0;
-        width: 12.5rem;
-        height: 12.5rem;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
         background-color: rgba(96, 92, 234, 0.5);
         filter: blur(5rem);
@@ -64,6 +75,9 @@
         height: 0.4rem;
         background-color: $text-color;
         transform: rotate(120deg);
+        @include respond() {
+            display: none;
+        }
     }
     &__descr {
         padding: 14.3rem 0 0 10rem;
