@@ -3,49 +3,62 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2.4rem;
     justify-content: center;
+    padding-bottom: 8.2rem;
+
     @include respond() {
         margin-top: 4.9rem;
         grid-template-columns: 1fr;
         @include padding-1_5rem;
     }
+
     &__label {
         display: none;
     }
+
     &__input {
         border: .2rem solid white;
         grid-column: 1 / -1;
-        padding: 2.9rem 0 2.9rem 2.3rem;
+        padding: 2.9rem 0 2.5rem 2.3rem;
         font-family: 'Noto Sans 400';
         font-size: 1.8rem;
         line-height: 2.5rem;
         color: $text-placeholder;
         border-radius: 1rem;
+
         @include respond() {
             padding: 1.8rem 0 1.7rem 1.1rem;
         }
+
         &:focus {
             outline: none;
             border: .2rem solid white;
         }
+
         &:focus:valid {
             border: .2rem solid white;
         }
+
         &:focus:invalid:required {
             border: .2rem solid $color-error;
         }
+
         &-state {
             grid-column: 2/3;
+
             @include respond() {
                 grid-column: 1/-1;
             }
         }
+
         &-venue {
             grid-column: 1/2;
+
             @include respond() {
                 grid-column: 1/-1;
             }
         }
     }
+
     &__area {
         grid-column: 1 / -1;
         padding: 2.9rem 0 0 2.3rem;
@@ -54,19 +67,23 @@
         line-height: 2.5rem;
         resize: none;
         height: 19.9rem;
-        margin-bottom: calc(6rem - 2.4rem);
+        margin-bottom: calc(6rem - 3rem);
         border-radius: 1rem;
+
         &:focus {
             outline: none;
             border: .2rem solid white;
         }
+
         &:focus:valid {
             border: .2rem solid white;
         }
+
         &:focus:invalid:required {
             border: .2rem solid $color-error;
         }
     }
+
     &__btn {
         background-color: transparent;
         color: $text-color;
@@ -81,6 +98,7 @@
         font-weight: 700;
         font-size: 2.4rem;
         line-height: 2.9rem;
+
         @include respond() {
             width: 100%;
         }

@@ -1,19 +1,90 @@
 .tools {
     display: grid;
     grid-template-columns: 40vw 60vw;
+    padding: 24rem 0 50rem 0;
+    padding-left: 10.5rem;
+
     @include respond() {
         @include padding-1_5rem;
         grid-template-columns: 1fr;
     }
+
     &__text {
+        & .title-2 {
+            margin-bottom: 3rem;
+        }
+
+        & .paragraph__small {
+            padding-right: 23rem;
+        }
+
         @include respond() {
             margin-bottom: 3rem;
         }
     }
+
     &__imgs {
         position: relative;
+
+        &-1 {
+            position: absolute;
+            top: 37.7rem;
+            left: 30.3rem;
+            width: 28.1rem;
+            height: 5.6rem;
+        }
+
+        &-2 {
+            position: absolute;
+            top: 15.9rem;
+            left: -11.9rem;
+            width: 19.2rem;
+            height: 11.4rem;
+        }
+
+        &-3 {
+            position: absolute;
+            top: -9.1rem;
+            left: 19.1rem;
+            width: 25.2rem;
+            height: 15rem;
+        }
+
+        &-4 {
+            position: absolute;
+            top: 30.1rem;
+            left: 6.1rem;
+            width: 19.4rem;
+            height: 11.8rem;
+        }
+
+        &-5 {
+            position: absolute;
+            top: 9.1rem;
+            left: 31.5rem;
+            width: 18.3rem;
+            height: 19.3rem;
+        }
+
+        &-6 {
+            position: absolute;
+            top: 9.1rem;
+            left: 1.3rem;
+            width: 23.3rem;
+            height: 4.5rem;
+        }
+
+        &-7 {
+            position: absolute;
+            top: 20.1rem;
+            left: 13.3rem;
+            width: 19.4rem;
+            height: 11.7rem;
+        }
+
         @include respond() {
             margin-bottom: 30rem;
+
             &-1 {
                 position: absolute;
                 top: 18.7rem;
@@ -21,9 +92,11 @@
                 width: 29.6rem;
                 height: 6rem;
             }
+
             &-2 {
                 display: none;
             }
+
             &-3 {
                 position: absolute;
                 top: 12.9rem;
@@ -31,6 +104,7 @@
                 width: 14.5rem;
                 height: 8.6rem;
             }
+
             &-4 {
                 position: absolute;
                 top: 9.5rem;
@@ -38,6 +112,7 @@
                 width: 9.1rem;
                 height: 5.5rem;
             }
+
             &-5 {
                 position: absolute;
                 top: 0rem;
@@ -45,6 +120,7 @@
                 width: 8.6rem;
                 height: 9rem;
             }
+
             &-6 {
                 position: absolute;
                 top: 5rem;
@@ -52,6 +128,7 @@
                 width: 11rem;
                 height: 2.2rem;
             }
+
             &-7 {
                 position: absolute;
                 top: 3.5rem;

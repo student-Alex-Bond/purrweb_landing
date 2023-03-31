@@ -1,11 +1,22 @@
 .feedback {
     padding: 0 31.1rem;
     text-align: center;
+
     @include respond() {
         padding: 0;
+
         &>.paragraph {
             padding: 0 2.6rem;
             text-align: center;
         }
+    }
+
+    & .title-2 {
+        margin-bottom: 2rem;
+    }
+
+    & .paragraph {
+        font-size: 1.8rem;
+        margin-bottom: 8rem;
     }
 }

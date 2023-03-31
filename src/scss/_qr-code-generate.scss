@@ -1,58 +1,70 @@
 .qr-code-generate {
     position: relative;
-    padding: 10rem 0;
+    padding: 10rem 0 10rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background: url('../img/background-qr-code.png') center no-repeat;
+
     @include respond() {
         @include padding-1_5rem;
         background: url('../img/background-qr-code.png') center no-repeat;
         background-size: 48rem 12.3rem;
         background-position: center 65%;
     }
+
     &__img {
+        transform: translate(1.2rem, .1rem);
         position: relative;
         width: 33.3rem;
         height: 66.7rem;
         object-fit: cover;
+
         @include respond() {
             order: 2;
             width: 18.2rem;
             height: 36.2rem;
+
             &>img {
                 width: 100%;
                 object-fit: cover;
             }
         }
     }
+
     &__text {
         padding: 8rem 10rem;
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
+
         & .title-2 {
             width: 40rem;
         }
+
         @include respond() {
             padding: 7rem 0;
             flex-direction: column;
             order: 1;
         }
     }
+
     &__arrow {
         position: absolute;
-        top: 45%;
-        left: 144%;
+        top: 43%;
+        left: 139%;
         font-family: "Monsterrat-Bold", "Arial", sans-serif;
         font-size: 2.2rem;
         line-height: 2.6rem;
+
         @include respond() {
             top: 118%;
             left: 62%;
             font-size: 1.8rem;
         }
+
         &::after {
             content: "";
             margin: 0;
@@ -60,12 +72,14 @@
             display: block;
             width: 20rem;
             height: 8rem;
-            transform: translate(-8rem, -10rem);
+            transform: translate(-7.7rem, -11rem);
+
             @include respond() {
                 transform: translate(5rem, -9.3rem) rotate(36deg);
             }
         }
     }
+
     &__background {
         position: absolute;
         top: 50%;
@@ -77,6 +91,7 @@
         filter: blur(15.5rem);
         border-radius: 47.6rem;
         transform: translate(-50%, -50%) rotate(-0.55deg);
+
         @include respond() {
             top: 65%;
             left: 50%;

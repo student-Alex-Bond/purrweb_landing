@@ -2,9 +2,15 @@
     font-family: "Noto Sans 400", "Arial", sans-serif;
     font-size: 2rem;
     line-height: 2.72rem;
+
     @include respond() {
         margin: 0;
         font-size: 1.6rem;
         line-height: 2.2rem;
+    }
+
+    &__small {
+        font-size: 1.8rem;
+        line-height: 2.5rem;
     }
 }
