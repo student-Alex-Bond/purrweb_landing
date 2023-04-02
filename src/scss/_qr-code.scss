@@ -3,8 +3,6 @@
     display: grid;
     grid-template-columns: repeat(3, 33vw);
     align-items: end;
-
-
     background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url('../img/background-dj.jpg'), url('../img/background-coctail.jpg');
     background-size: 57% 64%, 57% 69%, 67% 73%;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -12,23 +10,21 @@
     background-origin: border-box, content-box, content-box;
     padding-bottom: 23rem;
     // padding: 23.4rem 0 30rem 0;
-
-
     @include respond() {
         &>.download {
             margin-bottom: 24rem;
         }
-
         @include padding-1_5rem;
-        padding-top: 25rem;
+        padding: 0;
+        //padding-top: 25rem;
         grid-template-columns: 1fr;
         background: linear-gradient(179.83deg,
-            #000000 -3.1%,
-            rgba(0,
-                0,
-                0,
-                0) 56.76%,
-            #000000 83.92%),
+        #000000 -3.1%,
+        rgba(0,
+        0,
+        0,
+        0) 56.76%,
+        #000000 83.92%),
         url('../img/background-coctail.jpg'),
         url('../img/background-dj.jpg');
         background-repeat: no-repeat no-repeat;
@@ -37,65 +33,54 @@
         background-size: 41.6rem 33.5rem,
         35.3rem 29.7rem;
     }
-
     & .download .download__text {
         display: none;
     }
-
-
     &__text {
         padding: 50rem 0rem 8rem 18.5rem;
-
+        @include respond() {
+            padding: 0;
+            @include padding-1_5rem;
+        }
         & .title-2 {
             margin-bottom: 2rem;
         }
-
         & .paragraph {
             padding-right: 5rem;
             margin-bottom: 5rem;
         }
-
         &>.download {
             display: flex;
             padding-left: 0;
-
-
             &__text {
                 display: none;
             }
-
         }
-
         @include respond() {
             margin-bottom: 5rem;
         }
     }
-
     &__img {
         width: 33.3rem;
         object-fit: cover;
-
         &-first {
             transform: translate(11.3rem, -4.8rem);
         }
-
         &-second {
             transform: translate(-.3rem, 29.1rem);
         }
-
         @include respond() {
             justify-self: center;
             width: 28.1rem;
             height: 56.4rem;
             margin-bottom: 5rem;
+            transform: translate(0, 0);
         }
     }
-
     &__nightlife {
         position: absolute;
         top: -5rem;
         right: 9.5rem;
-
         @include respond() {
             width: 8.9rem;
             height: 4.5rem;
