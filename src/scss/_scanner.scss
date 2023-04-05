@@ -4,6 +4,7 @@
     background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url('../img/background-barmen.jpg') top no-repeat;
     background-size: 144rem 83.6rem;
     padding: 34rem 0 15rem 0;
+
     @include respond() {
         grid-template-columns: auto;
         grid-template-rows: repeat(3, min-content);
@@ -11,32 +12,38 @@
         background-size: 45.7rem 30rem;
         padding: 24rem 0 11.4rem 0;
     }
+
     &__img {
         justify-self: center;
         width: 33.3rem;
         object-fit: cover;
+
         &-first {
-            order: 2;
             transform: translate(4rem, 9.5rem);
         }
+
         &-second {
-            order: 3;
             transform: translate(-5rem, 9.5rem);
         }
+
         @include respond() {
             width: 28.7rem;
             transform: translate(0, 0);
+
             &-first {
                 margin: 7rem 0 5.5rem 0;
             }
         }
     }
+
     &__text {
         align-self: end;
         padding-right: 39rem;
-        order: 1;
+
         @include respond() {
             padding: 0;
+            @include padding-1_5rem;
+
         }
     }
 }

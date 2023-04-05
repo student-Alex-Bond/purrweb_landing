@@ -99,8 +99,33 @@
         font-size: 2.4rem;
         line-height: 2.9rem;
 
+        &:hover {
+            animation: forBtn 1s cubic-bezier(.17, .67, .83, .67);
+        }
+
+
         @include respond() {
             width: 100%;
         }
     }
+}
+
+@keyframes forBtn {
+    0% {
+        transform: translateX(-1rem);
+    }
+
+    30% {
+        transform: translateX(1rem);
+    }
+
+    60% {
+        transform: translateX(0rem);
+    }
+
+    100% {
+        border: .2rem solid #FFFFFF;
+        transform: scale(1.1);
+    }
+
 }
