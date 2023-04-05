@@ -1,13 +1,15 @@
 .cookie {
+    display: block;
     margin: 0 auto;
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: translateY(18rem);
     width: 100%;
     z-index: 9999;
     padding: 3.6rem 2.8rem 3.4rem 10rem;
     background-color: $background-color-cookie;
+    transition: all 1s ease-in-out;
     &>.container {
         margin: 0 auto;
     }

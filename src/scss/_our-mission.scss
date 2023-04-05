@@ -5,6 +5,7 @@
     align-items: center;
     justify-content: center;
     padding: 11.5rem 0 49.9rem 0;
+    transition: all 3s ease;
     //height: 104.8rem;
     @include respond() {
         grid-template-columns: auto;
@@ -14,6 +15,7 @@
         @include padding-1_5rem;
     }
     &__text {
+        transition: all 3s ease;
         padding-right: 15rem;
         @include respond() {
             padding: 0;
@@ -26,12 +28,14 @@
         }
     }
     &__img {
+        transition: all 3s ease;
         position: absolute;
         top: -41rem;
-        left: -23rem;
+        right: 0;
+        margin: 0 auto;
         height: 153.9rem;
         width: 90.8rem;
-        transform: translate(1rem, 1rem) rotate(90deg);
+        transform: translate(-25%) rotate(90deg);
         @include respond() {
             position: relative;
             order: 2;
