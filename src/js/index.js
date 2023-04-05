@@ -2,10 +2,10 @@ window.addEventListener('DOMContentLoaded', () => {
     const cookie = document.querySelector('.cookie');
     const button = cookie.querySelector('.cookie__btn');
     const blckOurMission = document.querySelector('.our-mission');
-    const animateImage = document.querySelector('.our-mission__img');
+    const animateImage = document.querySelector('.our-mission__img_phone');
     const animateText = document.querySelector('.our-mission__text');
-
-    //view cookie
+    const elipseBg = blckOurMission.querySelector('.our-mission__elipse')
+        //view cookie
     const timerId = setTimeout(() => {
         cookie.style.transform = `none`;
 
@@ -24,10 +24,15 @@ window.addEventListener('DOMContentLoaded', () => {
                     animateImage.style.transform = `translateX(-50%) rotate(90deg)`;
                     animateText.style.transform = `translateX(50rem)`;
                     animateText.style.opacity = '0';
-                    const timerID = setTimeout(() => {
+                    const timerIDForImage = setTimeout(() => {
                         animateImage.style.transform = `translateX(-50%) rotate(0deg) scale(0.7)`;
-                        clearTimeout(timerID)
+                        clearTimeout(timerIDForImage)
                     }, 3000)
+                    const timerIDForElipse = setTimeout(() => {
+                        elipseBg.style.display = 'block';
+                        elipseBg.style.opacity = 0.2;
+                        clearTimeout(timerIDForElipse)
+                    }, 6000)
                     observer.unobserve(blckOurMission)
                 }
             })
