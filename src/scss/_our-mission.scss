@@ -55,8 +55,8 @@
         transform: translate(-50%, -50%);
         width: 50.1rem;
         height: 71.1rem;
-        clip-path: ellipse(50% 49% at 50% 50%);
+        border-radius: 50%;
         background: radial-gradient(62.81% 61.84% at 69.82% 26.13%, #CA13A4 0%, #8A0DBC 35.94%, #530FDC 78.13%, #0303F0 100%);
-        filter: blur(30rem);
+        filter: blur(9.8rem);
     }
 }

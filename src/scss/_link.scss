@@ -8,13 +8,16 @@
     text-decoration: none;
     padding-bottom: 0.1rem;
     border-bottom: .2rem solid $text-color;
-
-
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    z-index: 5;
+    &:hover {
+        box-shadow: inset 100px 0 0 0 white;
+        color: black;
+    }
     @include respond() {
         font-size: 1.4rem;
         line-height: 1.9rem;
     }
-
     &::before {
         content: '';
         display: block;
@@ -24,7 +27,6 @@
         background: url('../img/icon-user.svg') center / cover no-repeat;
         height: 2.6rem;
         width: 2.6rem;
-
         @include respond() {
             top: 0.1rem;
         }

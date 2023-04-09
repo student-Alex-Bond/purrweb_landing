@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     //animate block out-mission
-    if (window.matchMedia("(min-width: 376px)").matches) {
+    if (window.matchMedia("(max-width: 376px)").matches) {
         const blckOurMissionObserver = new IntersectionObserver((entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
