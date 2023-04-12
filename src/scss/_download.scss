@@ -45,6 +45,10 @@
         width: 16.2rem;
         height: 5.2rem;
         margin-right: 3rem;
+        transition: all .5s ease-in-out;
+        &:hover {
+            animation: for-downoad-btn 0.5s ease-out;
+        }
         &_big-btn {
             width: 25.9rem;
             height: 8.1rem;
@@ -65,5 +69,23 @@
             width: 100%;
             object-fit: contain;
         }
+    }
+}
+
+@keyframes for-downoad-btn {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
