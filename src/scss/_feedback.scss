@@ -1,20 +1,33 @@
 .feedback {
+    position: relative;
     padding: 0 31.1rem;
     text-align: center;
-
     @include respond() {
         padding: 0;
-
         &>.paragraph {
             padding: 0 2.6rem;
             text-align: center;
         }
     }
-
+    &__bg {
+        position: absolute;
+        top: 0rem;
+        left: 40rem;
+        @include blurred__bg;
+        opacity: 0.3;
+        height: 25rem;
+        width: 24.7rem;
+        &-big {
+            position: absolute;
+            top: 60rem;
+            left: 90rem;
+            width: 33.7rem;
+            height: 34.1rem;
+        }
+    }
     & .title-2 {
         margin-bottom: 2rem;
     }
-
     & .paragraph {
         font-size: 1.8rem;
         margin-bottom: 8rem;

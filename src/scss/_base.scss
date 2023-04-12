@@ -49,3 +49,12 @@ body {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
 }
+
+@mixin blurred__bg {
+    width: 28.7rem;
+    height: 26.7rem;
+    background: linear-gradient(12.08deg, $background-pink 2.82%, $background-blue 97.06%);
+    opacity: 0.2;
+    filter: blur(125px);
+    transform: rotate(5.78deg);
+}

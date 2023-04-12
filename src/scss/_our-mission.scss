@@ -10,11 +10,12 @@
     @include respond() {
         grid-template-columns: auto;
         grid-template-rows: repeat(2, min-content);
-        padding-bottom: 83rem;
+        padding-bottom: 58rem;
         padding-top: 11rem;
         @include padding-1_5rem;
     }
     &__text {
+        position: relative;
         transition: all 3s ease;
         padding-right: 15rem;
         @include respond() {
@@ -35,18 +36,27 @@
             transform: translateX(-156rem) rotate(90deg);
             @include respond() {
                 position: absolute;
-                top: 20rem;
+                top: 38rem;
+                left: 2.9rem;
                 order: 2;
                 transform: rotate(0deg);
-                height: 100rem;
-                width: 34.3rem;
-                justify-self: center;
-                object-fit: cover;
+                height: 50rem;
+                width: 32.3rem;
             }
         }
     }
+    &__circle {
+        position: absolute;
+        top: 0rem;
+        left: 15rem;
+        width: 8.5rem;
+        height: 8.5rem;
+        background: $background-pink;
+        opacity: 0.7;
+        filter: blur(50px);
+    }
     &__elipse {
-        transition: all 3s ease;
+        transition: all 3s ease-in-out;
         display: none;
         opacity: 0;
         position: absolute;
@@ -56,7 +66,7 @@
         width: 50.1rem;
         height: 71.1rem;
         border-radius: 50%;
-        background: radial-gradient(62.81% 61.84% at 69.82% 26.13%, #CA13A4 0%, #8A0DBC 35.94%, #530FDC 78.13%, #0303F0 100%);
+        background: radial-gradient(62.81% 61.84% at 69.82% 26.13%, $radial-gradient-color-1 0%, $radial-gradient-color-2 35.94%, $radial-gradient-color-3 78.13%, $radial-gradient-color-4 100%);
         filter: blur(9.8rem);
     }
 }

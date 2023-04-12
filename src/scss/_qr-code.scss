@@ -16,7 +16,7 @@
         }
         @include padding-1_5rem;
         padding: 0;
-        //padding-top: 25rem;
+        padding-top: 25rem;
         grid-template-columns: 1fr;
         background: linear-gradient(179.83deg,
         #000000 -3.1%,
@@ -51,6 +51,7 @@
         }
         &>.download {
             display: flex;
+            flex-wrap: wrap;
             padding-left: 0;
             &__text {
                 display: none;
@@ -64,7 +65,11 @@
         width: 33.3rem;
         object-fit: cover;
         &-first {
-            transform: translate(11.3rem, -4.8rem);
+            @include respond() {
+                margin-top: 24rem;
+            }
+            transform: translate(11.3rem,
+            -4.8rem);
         }
         &-second {
             transform: translate(-.3rem, 29.1rem);

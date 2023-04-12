@@ -9,6 +9,7 @@
         grid-template-columns: 1fr;
     }
     &__text {
+        position: relative;
         & .title-2 {
             margin-bottom: 3rem;
         }
@@ -21,6 +22,12 @@
         @include respond() {
             margin-bottom: 3rem;
         }
+    }
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: -14.6rem;
+        @include blurred__bg;
     }
     &__imgs {
         position: relative;

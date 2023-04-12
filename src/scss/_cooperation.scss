@@ -38,6 +38,10 @@
         font-size: 2.4rem;
         line-height: 3.3rem;
         font-family: "Noto Sans 400", "Arial", sans-serif;
+        transition: all .5s ease-in-out;
+        &:hover {
+            color: darkmagenta;
+        }
     }
     &__text {
         font-family: "Noto Sans Bold", "Arial", sans-serif;
