@@ -4,26 +4,24 @@
     grid-template-rows: min-content min-content;
     position: relative;
     z-index: 0;
-
     @include respond() {
         grid-template-columns: 65vw 1fr;
         @include padding-1_5rem;
     }
-
-    &__img {
+    &__container {
         position: relative;
+    }
+    &__img {
         transform: translate(-17.5rem, -13.2rem);
-
         &_figure {
             position: absolute;
             top: 0;
             left: -4rem;
             width: 66.3rem;
             height: 66.3rem;
-            z-index: 1;
+            z-index: -1;
             background: url('../img/backgroung-figure.png') center/100% no-repeat;
             filter: blur(5rem);
-
             @include respond() {
                 top: 0.8rem;
                 left: -13.2rem;
@@ -33,31 +31,22 @@
                 filter: blur(3.5rem);
             }
         }
-
         &_phone {
             position: absolute;
             top: 0;
             left: 0;
             z-index: 2;
-
-            @include respond() {
-                width: 31rem;
-                height: 46.5rem;
-            }
         }
-
         @include respond() {
             transform: translate(-6rem, -1rem);
         }
     }
-
     &__circle {
         position: absolute;
         top: 31rem;
         left: 8.8rem;
         width: 12.5rem;
         height: 12.5rem;
-
         @include respond() {
             width: 7.4rem;
             height: 7.4rem;
@@ -65,7 +54,6 @@
             left: 0rem;
         }
     }
-
     &__blur {
         position: absolute;
         top: 0;
@@ -76,7 +64,6 @@
         background-color: rgba(96, 92, 234, 0.5);
         filter: blur(5rem);
     }
-
     &__divider {
         position: absolute;
         top: 12rem;
@@ -86,15 +73,12 @@
         height: 0.4rem;
         background-color: $text-color;
         transform: rotate(120deg);
-
         @include respond() {
             display: none;
         }
     }
-
     &__descr {
         padding: 14.3rem 0 0 10rem;
-
         @include respond() {
             padding: 9.8rem 0 0 0;
             margin-bottom: 11.3rem;
