@@ -78,6 +78,7 @@
         }
     }
     &__descr {
+        z-index: 5;
         padding: 14.3rem 0 0 10rem;
         @include respond() {
             padding: 9.8rem 0 0 0;

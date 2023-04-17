@@ -1,13 +1,13 @@
 .scanner {
     display: grid;
     grid-template-columns: 29vw 30vw 45vw;
-    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url('../img/background-barmen.jpg') top no-repeat;
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url('../img/background-barmen.webp') top no-repeat;
     background-size: 144rem 83.6rem;
     padding: 34rem 0 15rem 0;
     @include respond() {
         grid-template-columns: auto;
         grid-template-rows: repeat(3, min-content);
-        background: linear-gradient(179.83deg, #000000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0) 54.71%, #000000 83.92%), url('../img/background-barmen.jpg') top / cover no-repeat;
+        background: linear-gradient(179.83deg, #000000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0) 54.71%, #000000 83.92%), url('../img/background-barmen-small.webp') top / cover no-repeat;
         background-size: 45.7rem 30rem;
         padding: 24rem 0 11.4rem 0;
     }

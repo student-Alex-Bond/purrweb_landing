@@ -54,6 +54,10 @@
         background: $background-pink;
         opacity: 0.7;
         filter: blur(50px);
+        @include respond() {
+            top: -3rem;
+            left: -2rem;
+        }
     }
     &__elipse {
         transition: all 3s ease-in-out;

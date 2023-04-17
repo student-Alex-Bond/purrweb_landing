@@ -8,9 +8,17 @@
         margin-bottom: 14.5rem;
     }
     &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
         @include blurred__bg;
+        @include respond() {
+            top: 15rem;
+            left: 18rem;
+        }
     }
     &__text {
+        position: relative;
         justify-self: end;
         padding-right: 16rem;
         & .title-2 {

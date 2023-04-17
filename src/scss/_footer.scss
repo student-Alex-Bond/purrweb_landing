@@ -29,6 +29,15 @@
         @include blurred__bg;
         width: 40.6rem;
         height: 41.1rem;
+        @include respond() {
+            top: 11rem;
+            left: -10rem;
+            width: 22.5rem;
+            height: 22.8rem;
+            opacity: 0.3;
+            filter: blur(7rem);
+            transform: rotate(5.78deg);
+        }
     }
     &__left-part {
         @include respond() {

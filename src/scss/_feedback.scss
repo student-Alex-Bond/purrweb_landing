@@ -17,12 +17,22 @@
         opacity: 0.3;
         height: 25rem;
         width: 24.7rem;
+        @include respond() {
+            top: 0rem;
+            left: 0rem;
+            filter: blur(12.5rem)
+        }
         &-big {
             position: absolute;
             top: 60rem;
             left: 90rem;
             width: 33.7rem;
             height: 34.1rem;
+            @include respond() {
+                top: 98rem;
+                left: 25rem;
+                filter: blur(125px);
+            }
         }
     }
     & .title-2 {

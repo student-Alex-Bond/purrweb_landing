@@ -4,17 +4,14 @@
     grid-gap: 2.4rem;
     justify-content: center;
     padding-bottom: 8.2rem;
-
     @include respond() {
         margin-top: 4.9rem;
         grid-template-columns: 1fr;
         @include padding-1_5rem;
     }
-
     &__label {
         display: none;
     }
-
     &__input {
         border: .2rem solid white;
         grid-column: 1 / -1;
@@ -24,41 +21,32 @@
         line-height: 2.5rem;
         color: $text-placeholder;
         border-radius: 1rem;
-
         @include respond() {
             padding: 1.8rem 0 1.7rem 1.1rem;
         }
-
         &:focus {
             outline: none;
             border: .2rem solid white;
         }
-
         &:focus:valid {
             border: .2rem solid white;
         }
-
         &:focus:invalid:required {
             border: .2rem solid $color-error;
         }
-
         &-state {
             grid-column: 2/3;
-
             @include respond() {
                 grid-column: 1/-1;
             }
         }
-
         &-venue {
             grid-column: 1/2;
-
             @include respond() {
                 grid-column: 1/-1;
             }
         }
     }
-
     &__area {
         grid-column: 1 / -1;
         padding: 2.9rem 0 0 2.3rem;
@@ -69,21 +57,17 @@
         height: 19.9rem;
         margin-bottom: calc(6rem - 3rem);
         border-radius: 1rem;
-
         &:focus {
             outline: none;
             border: .2rem solid white;
         }
-
         &:focus:valid {
             border: .2rem solid white;
         }
-
         &:focus:invalid:required {
             border: .2rem solid $color-error;
         }
     }
-
     &__btn {
         background-color: transparent;
         color: $text-color;
@@ -98,14 +82,12 @@
         font-weight: 700;
         font-size: 2.4rem;
         line-height: 2.9rem;
-
         &:hover {
             animation: forBtn 1s cubic-bezier(.17, .67, .83, .67);
         }
-
-
         @include respond() {
             width: 100%;
+            z-index: 5;
         }
     }
 }
@@ -114,18 +96,14 @@
     0% {
         transform: translateX(-1rem);
     }
-
     30% {
         transform: translateX(1rem);
     }
-
     60% {
         transform: translateX(0rem);
     }
-
     100% {
         border: .2rem solid #FFFFFF;
         transform: scale(1.1);
     }
-
 }

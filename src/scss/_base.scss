@@ -57,4 +57,8 @@ body {
     opacity: 0.2;
     filter: blur(125px);
     transform: rotate(5.78deg);
+    @include respond() {
+        filter: blur(7rem);
+        opacity: .3;
+    }
 }
