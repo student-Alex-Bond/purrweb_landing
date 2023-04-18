@@ -34,6 +34,9 @@
             height: 153.9rem;
             width: 90.8rem;
             transform: translateX(-156rem) rotate(90deg);
+            &>img {
+                width: 100%;
+            }
             @include respond() {
                 position: absolute;
                 top: 38rem;
